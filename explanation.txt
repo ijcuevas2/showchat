@@ -1,0 +1,11 @@
+Flags For Creating tsconfig.json
+
+tsc --init --target es5 --sourceMap --experimentalDecorators --emitDecoratorMetadata
+
+target es5: Specify that we want to get our TypeScript code compiled to ECMAScript 5 and we can run our code in older browsers.
+
+sourceMap: Allows us to generate the source maps, i.e files that contain mappings between the generated ES5 code and the original TypeScript code. 
+
+experimentalDecorators & emitDecoratorMetada: We need those flags to compile, transpile to ECMAScript 5 as we are using
+TypeScript with decorators (to annotate and modify classes and properties at design time, it basically says things like 
+— ‘this is a custom property’ or ‘this class is a component (@Component, decorator)).
