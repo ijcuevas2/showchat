@@ -1,5 +1,0 @@
-app.use(express.static(__dirname + '/public'));
-
-var port = process.env.PORT || 8080;
-console.log("Express server running on " + port);
-app.listen(process.env.PORT || port);

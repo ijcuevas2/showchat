@@ -3,20 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "postinstall": "npm run typings install",
-    "tsc": "tsc",
-    "tscw": "tsc -w",
-    "lite": "lite-server",
-    "app": "concurrently \"npm run tscw\" \"npm run lite\" ",
-    "typings": "typings"
-  },
-  "author": "",
+  "scripts": {},
+  "author": "Ismael Cuevas",
   "license": "ISC",
   "dependencies": {
     "@angular/core": "^2.4.1",
     "concurrently": "^3.1.0",
     "es6-shim": "^0.35.2",
+    "express": "^4.14.0",
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-compass": "^1.1.1",
@@ -25,6 +19,9 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-copy": "^0.1.0",
     "grunt-express-server": "^0.5.3",
+    "grunt-sass": "^2.0.0",
+    "grunt-typescript": "^0.8.0",
+    "node-sass": "^4.1.1",
     "reflect-metadata": "^0.1.9",
     "rxjs": "^5.0.1",
     "systemjs": "^0.19.41",
@@ -32,7 +29,6 @@
   },
   "devDependencies": {
     "es6-shim": "^0.35.2",
-    "lite-server": "^2.2.2",
     "typings": "^2.1.0"
   }
 }

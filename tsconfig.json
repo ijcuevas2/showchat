@@ -9,7 +9,7 @@
         "removeComments": true,
         "moduleResolution": "node",
         "outDir": "./public/source_js",
-        "rootDir":"./public/source_ts"
+        "rootDir":"./source_ts"
     },
     "exclude": [
         "node_modules",
