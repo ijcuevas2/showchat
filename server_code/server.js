@@ -7,7 +7,7 @@ var app        = express();
  * to make this work with Windows paths.
  */
 var publicPath = __dirname + '/../public';
-console.log(publicPath);
+// console.log(publicPath);
 app.use(express.static(publicPath));
 
 /**

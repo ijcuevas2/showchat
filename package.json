@@ -19,6 +19,7 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-copy": "^0.1.0",
     "grunt-express-server": "^0.5.3",
+    "grunt-nodemon": "^0.4.2",
     "grunt-sass": "^2.0.0",
     "grunt-typescript": "^0.8.0",
     "node-sass": "^4.1.1",

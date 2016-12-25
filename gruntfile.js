@@ -1,11 +1,14 @@
 module.exports = function(grunt) {
-    grunt.loadNpmTasks('grunt-contrib-uglify');
+    /* This might be useful to enable after development
+     * */
+    // grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-sass');
-    grunt.loadNpmTasks('grunt-express-server');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-clean');
+    // grunt.loadNpmTasks('grunt-express-server');
+    // grunt.loadNpmTasks('grunt-contrib-copy');
+    // grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-typescript');
+    grunt.loadNpmTasks('grunt-nodemon');
     grunt.initConfig({
         sass: {
             options: {
@@ -47,17 +50,22 @@ module.exports = function(grunt) {
                 files: ['server_code/server.js']
             }
         },
-        express: {
-            options: {
-                //Override defaults here
-                spawn: false
-            },
+        // express: {
+        //     options: {
+        //         //Override defaults here
+        //         spawn: false
+        //     },
+        //     dev: {
+        //         options: {
+        //             script: 'server_code/server.js',
+        //         }
+        //     }
+        // }
+        nodemon: {
             dev: {
-                options: {
-                    script: 'server_code/server.js',
-                }
+                script: 'server_code/server.js'
             }
         }
     }) //initConfig
-    grunt.registerTask('default', ['sass', 'typescript', 'express:dev', 'watch']);
+    grunt.registerTask('default', ['sass', 'typescript', 'nodemon:dev', 'watch']);
 }

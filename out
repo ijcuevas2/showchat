@@ -1,53 +1,3 @@
- 1008  sudo apt install xkb
- 1009  cd /usr/share/X11/xkb/symbols/
- 1010  ls
- 1011  vim pc 
- 1012  sudo vim pc 
- 1013  ls
- 1014  man shhnuke
- 1015  man sshnuke
- 1016  sp play
- 1017  spotify &
- 1018  pkipkillpkill spotify
- 1019  pkill spotify
- 1020  ls
- 1021  spotify &> /dev/null &
- 1022  sp play
- 1023  spotify &> /dev/null &
- 1024  sp play
- 1025  > composition_vs_inheritance.md
- 1026  sp prev
- 1027  sp pause
- 1028  sp prev
- 1029  sp play
- 1030  sp pause
- 1031  sp play
- 1032  sp pause
- 1033  sp play
- 1034  sp next
- 1035  amixer -D pulse sset Master 50% 
- 1036  amixer -D pulse sset Master 100% 
- 1037  sp pause
- 1038  sp play
- 1039  sp prev
- 1040  amixer -D pulse sset Master 100% 
- 1041  amixer -D pulse sset Master 40% 
- 1042  sudo apt install xamarin
- 1043  sp pause
- 1044  sp play
- 1045  sp pauise
- 1046  sp pause
- 1047  cd ~/Downloads/
- 1048  ls
- 1049  unzip Options_6.35.142.zip 
- 1050  ls
- 1051  wine
- 1052  cd LogiMgr\ Installer\ 6.35.142.app/
- 1053  ls
- 1054  cd Contents/
- 1055  ls
- 1056  cd Resources/
- 1057  ls
  1058  cd ..
  1059  ls
  1060  cd _CodeSignature/
@@ -990,11 +940,61 @@
  1997  ls
  1998  vim _mixins.scss 
  1999  vim _base.scss 
- 2000  npm remove grunt-contrib-compass
- 2001  ls
- 2002  npm install --save-dev grunt-sass
- 2003  npm install node-gyp@3.4.0 -g
- 2004  sudo npm install node-gyp@3.4.0 -g
- 2005  ls
- 2006  npm install --save-dev grunt-sass
- 2007  history > history
+ 2000  ls
+ 2001  cd showchat/
+ 2002  ls
+ 2003  tmux -2
+ 2004  ls
+ 2005  vim package.json 
+ 2006  vim .gitignore 
+ 2007  ls public/
+ 2008  vim .gitignore 
+ 2009  ls
+ 2010  vim tsconfig.json 
+ 2011  cd public/
+ 2012  ls
+ 2013  cd js
+ 2014  ls
+ 2015  vim file.d.ts
+ 2016  vim file.js.map
+ 2017  cd ..
+ 2018  ls
+ 2019  cd ..
+ 2020  ls
+ 2021  cd server_code/
+ 2022  ls
+ 2023  vim server.js 
+ 2024  ls
+ 2025  cd ..
+ 2026  ls
+ 2027  cd server_code/
+ 2028  ls
+ 2029  vim server.js 
+ 2030  cd ..
+ 2031  ls
+ 2032  cd public/js
+ 2033  ls
+ 2034  vim file.
+ 2035  vim file.js
+ 2036  cd ..
+ 2037  ls
+ 2038  cd ..
+ 2039  ls
+ 2040  git add --all
+ 2041  git commit -am "Compiling Sass and Typescript"
+ 2042  ls
+ 2043  git push 
+ 2044  ls
+ 2045  > install.sh && chmod +x install.sh
+ 2046  ls
+ 2047  cd server_code/
+ 2048  ls
+ 2049  cd ..
+ 2050  ls
+ 2051  vim gruntfile.js 
+ 2052  cim compass_config.rb 
+ 2053  vim compass_config.rb 
+ 2054  rm compass_config.rb 
+ 2055  ls
+ 2056  vim history 
+ 2057  history 3000 > out
