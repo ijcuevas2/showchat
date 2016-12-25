@@ -8,6 +8,7 @@ module.exports = function(grunt) {
     // grunt.loadNpmTasks('grunt-contrib-copy');
     // grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-typescript');
+    grunt.loadNpmTasks('grunt-concurrent');
     grunt.loadNpmTasks('grunt-nodemon');
     grunt.initConfig({
         sass: {
@@ -43,6 +44,10 @@ module.exports = function(grunt) {
                 files: ['source_sass/*.scss'],
                 tasks: ['sass'],
             },
+            typescript_files: {
+                files: ['source_ts/*.ts'],
+                tasks: ['typescript'],
+            },
             html: {
                 files: ['public/*.html']
             },
@@ -65,7 +70,13 @@ module.exports = function(grunt) {
             dev: {
                 script: 'server_code/server.js'
             }
+        },
+        concurrent: {
+            tasks: ['nodemon', 'watch'],
+            options: {
+                logConcurrentOutput: true
+            }
         }
     }) //initConfig
-    grunt.registerTask('default', ['sass', 'typescript', 'nodemon:dev', 'watch']);
+    grunt.registerTask('default', ['sass', 'typescript', 'concurrent:tasks']);
 }
